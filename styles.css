@@ -64,6 +64,32 @@ a {
     transform: scale(1.02);
 }
 
+.tile:hover .icon{
+    transition: initial;
+    animation: spin-bounce 1s infinite alternate; 
+    transform: rotateY(180deg) rotateZ(15deg) scale(1.1); 
+
+
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+@keyframes spin-bounce {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform: scale(1.3) rotate(360deg);
+    }
+}
 .tile-share-button {
     margin: 8px;
     width: 40px;
